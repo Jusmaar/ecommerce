@@ -7,39 +7,43 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+   <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" type="text/css" href="{{url('CelularesPeru/css/bootstrap-flex.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('/CelularesPeru/css/app.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url('CelularesPeru/css/franco.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="{{url('CelularesPeru/css/menu.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url('/CelularesPeru/fontawesome/css/font-awesome.css ')}}">
   </head>
   <body>
-    <!--Header-->
+     <!--Header-->
 
 
     <header id="header-container">
       <div class="container">
         <div class="row  flex-items-xs-between flex-items-xs-middle">
             <div class="col-xs-3 ">
-              <h1>CelularesPeru</h1>
+              <h1><a href="{{url('/')}}"><img class="imagen3" width="350px" height="100px" max-width="100%" src="CelularesPeru/imagenes/2.png"></a></h1>
             </div>
-             <div class="col-xs-3 text-xs-right">
+             <div class="col-xs-6 text-xs-right" id="textf">
               <button class="navbar-toggler  hidden-sm-up" data-toggle="collapse" data-target="#navMenu">&#9776;</button>
               
                 @if (Auth::guest())
-                    
-                            <a class="login hidden-xs-down text-uppercase font-weigth-bold" href="{{ url('/login') }}">Login</a>
+                            <a href="{{ url('/register') }}" class="text-uppercase color-f hidden-xs-down font-weigth-bold estilof"><img src="CelularesPeru/imagenes/mregistrar.png"> Registrar</a>
+                            <a class="login hidden-xs-down text-uppercase font-weigth-bold estilof " href="{{ url('/login') }}"><img src="CelularesPeru/imagenes/login.png"> Iniciar Sesión</a>
                             
                 @else
                     
-                                <a href="#" class="login text-uppercase font-weigth-bold">
+                                <a href="#" class="login text-uppercase font-weigth-bold" id="displayf">
                                     {{ Auth::user()->name }} 
                                 </a>
 
                         
                                  <a class="login hidden-xs-down text-uppercase font-weigth-bold" href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">&#62;
-                                            Logout
+                                                     document.getElementById('logout-form').submit();"><img src="CelularesPeru/imagenes/salirmenuf.png" id="imagf">
+                                            Salir
                                 </a>
 
                                 <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -58,41 +62,43 @@
       <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
       <div class="container">
         <div class="row">
-          <div class="col-xs-10 offset-xs-1 col-md-5 offset-md-0">
-            <ul class="nav navbar-nav" >
-             <li class="nav-item text-xs-center">
-                <a href="{{url('/')}}" class="nav-link">Home</a>
+          <div class="col-xs-12 offset-xs-1 col-md-7 offset-md-0" id="div-nav">
+            <ul class="nav navbar-nav" id="nav-f" >
+              <li class="nav-item text-xs-center">
+                <a href="{{url('/')}}" class="nav-link"><img src="CelularesPeru/imagenes/mhome1.png"> Home</a>
               </li>
               <li class="nav-item text-xs-center">
-                <a href="{{url('/catalogo')}}" class="nav-link active">Catalogo</a>
+                <a href="{{url('/catalogo')}}" class="nav-link" style="color: black"><img src="CelularesPeru/imagenes/mcatalogo3.png" ><strong> Catalogo</strong></a>
               </li>
 
 
               <li class="nav-item text-xs-center">
-                <a href="{{url('/carrito')}}" class="nav-link">Carrito
-                <span>
-                  {{$productsCount}}
+                <a href="{{url('/carrito')}}" class="nav-link"><img src="CelularesPeru/imagenes/mcarrito1.png"> Carrito<span>
+                {{$productsCount}}
                 </span>
                 </a>
               </li>
 
 
               <li class="nav-item text-xs-center">
-                <a href="{{url('/nosotros')}}" class="nav-link">Nosotros</a>
+                <a href="{{url('/nosotros')}}" class="nav-link active" style="color: rgba(0,0,0,.3)"><img src="CelularesPeru/imagenes/mnosotros1.png"> Nosotros</a>
               </li>
               <li class="nav-item text-xs-center">
-                <a href="{{url('/contacto')}}" class="nav-link">Contacto</a>
+                <a href="{{url('/contacto')}}" class="nav-link"><img src="CelularesPeru/imagenes/mcontacto1.png"> Contacto</a>
               </li>
               @if (Auth::guest())
               <li class="nav-item text-xs-center hidden-sm-up">
-                <a href="login.html" class="nav-link">Login</a>
+                <a href="{{url('/login')}}" class="nav-link"><img src="CelularesPeru/imagenes/mlogin.png"> Iniciar Sesión</a>
+              </li>
+              <li class="nav-item text-xs-center hidden-sm-up">
+                <a href="{{ url('/register') }}" class="nav-link"><img src=CelularesPeru/imagenes/registro1.png> Registrar</a>
               </li>
               @else
               <li class="nav-item text-xs-center hidden-sm-up">
                 <a class="nav-link" href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                            Logout
+                                                     document.getElementById('logout-form').submit();"><img src="CelularesPeru/imagenes/salida.png">
+                                            Salir
                                 </a>
 
                                 <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -104,10 +110,10 @@
 
             </ul>
           </div>
-          <div class="col-xs-12 col-md-6 offset-md-1 hidden-xs-down">
+          <div class="col-xs-12 col-md-4 offset-md-1 hidden-xs-down" id="div-nav2">
             <form>
               <div class="input-group">
-                <input  type="text" class="form-control" placeholder="¿Encontro lo que buscaba?"></input>
+                <input  type="text" class="form-control" placeholder="¿Que esta buscando?"></input>
                 <span class="input-group-btn">
                   <button class="btn btn-celperu" type="button">
                     <span class="hidden-sm-down">Buscar</span>
@@ -125,7 +131,7 @@
           <div class="col-xs">
             <form>
               <div class="input-group">
-                <input  type="text" class="form-control" placeholder="¿Encontro lo que buscaba?"></input>
+                <input  type="text" class="form-control" placeholder="¿Que esta buscando?"></input>
                 <span class="input-group-btn">
                   <button class="btn btn-celperu" type="button">
                     <span class="hidden-sm-down">Buscar</span>
@@ -265,44 +271,50 @@
 
     <!--/Celulares-->
 
-    <!--Footer-->
+     <!--Footer-->
     <footer id="footer-container">
-      <div class="container">
-        <div class="row text-xs-center text-md-left">
-          <div class="col-md-4">
-            <h4>CelularesPeru<h5>
-            <p>Celular: 987501482</p>
-            <p>Email: celulareperu@gmail.com</p>
-            <p>Visitanos en: </p>
-            <figure>
-              <img src="{{url('/CelularesPeru/imagenes/redessociales.fw.png')}}" usemap="#Map">
-              <map name="Map">
-              <area shape="rect" coords="-2,2,42,46" href="https://www.facebook.com/" target="_blank">
-              <area shape="rect" coords="66,3,107,39" href="https://www.twitter.com" target="_blank">
-            </figure>
-          </map>
-          </div>
-          <div class="col-md-3 offset-md-5">
-            <h4>Navegacion</h4>
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="catalogo.html" class="nav-link">Catalogo</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Carrito</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a href="login.html" class="nav-link">Login</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div class="contenedor-f">
+          <article class="footer-1">
+            <div class="footer-1-1">
+              <p>Síguenos:</p>
+              <a href="https://www.facebook.com/" target="_blank"><img src="CelularesPeru/imagenes/facebook.png"></a>
+              <a href="https://www.twitter.com/" target="_blank"><img src="CelularesPeru/imagenes/twitter.png"></a>
+              <a href="https://www.google+.com/" target="_blank"><img src="CelularesPeru/imagenes/google-plus.png"></a>         
+            </div>
+            <div class="footer-1-2">
+              <p>Escríbenos:</p>
+              <p><a href="mailto:celularesperu@gmail.com"><img src="CelularesPeru/imagenes/gmail.png"> @celularesperu@gmail.com</a></p>
+            </div>        
+          </article>
+
+          <article class="footer-2">
+            <p><cite>Copyright © 2005-2017</cite></p>
+            <p><cite>Peruvian Nexus</cite></p>
+            <p><cite>Todos los derechos reservados</cite></p>
+          </article>
+
+          <article class="footer-3">
+            <div class="division">
+              <ul class="navegador">
+                <li class="nav-items">
+                  <a href="{{url('/')}}" class="n-link1"><img src="CelularesPeru/imagenes/casa.png">Home</a>
+                </li>
+                <li class="nav-items">
+                  <a href="{{url('/catalogo')}}" class="n-link2"><img src="CelularesPeru/imagenes/catalogo.png">Catalogo</a>
+                </li>
+                <li class="nav-items">
+                  <a href="{{url('/carrito')}}" class="n-link3"><img src="CelularesPeru/imagenes/carrito.png">Carrito</a>
+                </li>
+                <li class="nav-items">
+                  <a href="{{url('/contacto')}}" class="n-link4"><img src="CelularesPeru/imagenes/contacto.png">Contacto</a>
+                </li>
+                <li class="nav-items">
+                  <a href="{{url('/login')}}" class="n-link5"><img src="CelularesPeru/imagenes/login.png">Entrar</a>
+                </li>
+              </ul>
+            </div>
+
+          </article>
       </div>
     </footer>
     <!--/Footer-->

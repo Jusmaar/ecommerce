@@ -3,13 +3,13 @@ body{
 	margin: 0;
 }
 #header-container{
-	background-color: #99c84a;
+	background-color: #286FBF;
 	color: white;
 	padding: 10px;
 }
 
 #info-container{
-	background-color: #99c84a;
+	background-color: #286FBF;
 	color: white;
 }
 #header-container .login,#header-container .navbar-toggler{
@@ -20,15 +20,15 @@ body{
 }
 
 .btn.btn-celperu{
-	background-color: #99c84a;
+	background-color: #286FBF;
 	color: white;
 }
 .btn.btn-celperu:hover{
-	background-color: #8ab542;
+	background-color: #286FBF;
 
 }
 .btn-lg{
-	background-color: #99c84a;
+	background-color: #286FBF;
 	color: white;
 	display: block;
 	margin: 5px auto;
@@ -44,15 +44,15 @@ body{
 
 
 .btn-lg:hover{
-	background-color: #8ab542;
+	background-color: #286FBF;
 }
 .olvidar{
 	margin: 5px;
-	color: #99c84a;
+	color:#286FBF;
 }
 .btn-registrar{
 	background-color: white;
-	border-color: #99c84a;
+	border-color: #286FBF;
 	display: block;
 	width: 200px;
 	margin-top: 5px;
@@ -60,26 +60,26 @@ body{
 
 }
 .btn-registrar:hover{
-	background-color: #99c84a;
-	border-color: #99c84a;
+	background-color: #286FBF;
+	border-color: #286FBF;
 	display: block;
 
 
 
 }
 .olvidar:hover{
-	color: #8ab542;
+	color: #286FBF;
 }
 
 .datosUsuario{
 	font-size: 20px;
-	color: #8ab542;
+	color: #286FBF;
 }
 .recordar{
-	color: #8ab542;
+	color: #286FBF;
 }
 input.form-control:focus{
-	border-color: #99c84a;
+	border-color: #286FBF;
 }
 
 #search-bar{
@@ -112,8 +112,8 @@ input.form-control:focus{
 }
 
 #filtros-container .list-group-item-action.active{
-	background-color: #99c84a;
-	border-color: #99c84a;
+	background-color: #286FBF;
+	border-color:#286FBF;
 
 }
 
@@ -128,12 +128,12 @@ input.form-control:focus{
 }
 
 #paginator-container .page-link:not(.active){
-	color: #99c84a;
+	color: #286FBF;
 }
 
 #paginator-container .page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
-	background-color: #99c84a;
-	border-color: #99c84a;
+	background-color: #286FBF;
+	border-color: #286FBF;
 	color: white;
 }
 
@@ -156,7 +156,7 @@ input.form-control:focus{
 }
 
 .textcontenido h2{
-	color: #99c84a;
+	color: #286FBF;
 
 }
 .imgcenter{
@@ -166,7 +166,7 @@ input.form-control:focus{
 .btnplus{
 
 	border: solid;
-	color: #99c84a; 
+	color: #286FBF; 
 
 }
 
@@ -180,7 +180,7 @@ input.form-control:focus{
 }
 
 .floating :hover{
-	color: #8ab542; 
+	color: #286FBF; 
 	
 }
 
@@ -193,11 +193,11 @@ input.form-control:focus{
 }
 
 .tituloprod{
-	color: #5E9732;
+	color: #286FBF;
 }
 
 .creado{
-	background-color: #d4e157;
+	background-color: #286FBF;
 }
 
 

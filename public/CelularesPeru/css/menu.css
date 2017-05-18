@@ -1,0 +1,161 @@
+
+
+#nav-f li a{
+	padding: 0;
+}
+
+
+#div-nav #nav-f img{
+	vertical-align: top;
+	padding-top: 0.2em;
+}
+
+#div-nav{
+ 	width: 60%;
+}
+
+#div-nav a{
+	padding-right: 1em;
+}
+
+#navMenu .container{
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+div#div-nav{
+	margin: 0.4em auto;
+}
+
+
+
+div#div-nav2{
+	text-align: center;
+}
+#navMenu .container .row{
+	margin: 0;
+	width: 100%;
+}
+#div-nav .row{
+	width: 100% !important;
+}
+
+#div-nav .nav{
+	margin: 0 auto;
+}
+
+@media (min-width: 768px){
+	.col-md-6{
+		max-width: 40%;
+		margin: 0 auto;
+	}
+
+	.col-md-5{
+		margin: 0;
+		max-width: 50%;	
+	}
+
+	#div-nav{
+		padding: 0 0 0 1em;
+		margin: 0 ;
+	}
+}
+
+
+
+@media (max-width: 768px){
+	ul#nav-f li{
+	margin-left: 1rem;
+    }
+
+	#navMenu .container{
+		width: 100%;
+	}
+
+	#div-nav{
+		width: 100% ;
+		margin-bottom: 2em;
+	}
+}
+
+input.form-control:focus{
+	border-color: #286FBF;
+}
+
+.btn-lg:hover{
+	background-color: #286FBF;
+}
+
+.btn-registrar:hover{
+	background-color: #286FBF;
+	border-color: #286FBF;
+	display: block;
+}
+
+.olvidar:hover{
+	color: #286FBF;
+}
+
+
+#footer-container .nav-link:hover{
+	color: black;
+}
+
+.floating :hover{
+	color: #286FBF; 
+	
+}
+
+.btn-celperu:hover{
+	background-color: #286FBF;
+}
+
+/*******HEADER*****/
+
+.color-f{
+	color: white;
+}
+
+.estilof{
+	display: inline-block;
+	text-align: left;
+}
+
+
+.estilof:hover{
+	text-decoration: none;
+	color: skyblue !important;
+}
+
+@media (max-width: 768px){
+	.estilof{
+		padding-bottom: 0.5em;
+	}
+}
+
+a.estilof{
+	margin: 0 0.4em;
+}
+
+a#displayf{
+	display: block;
+}
+
+img#imagf{
+	display: inline-block;
+	vertical-align: top;
+	padding: 0.2em 0 0 0;
+}
+
+div#textf a:hover{
+	text-decoration: none;
+}
+
+div#textf a{
+	margin: 0.5em;
+}
+
+input.btn-success{
+	background-color: skyblue;
+}

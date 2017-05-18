@@ -1,0 +1,222 @@
+
+/*Franco Nosotros*/
+
+#inf-nosotros{
+	text-align: center;
+	margin: 1.3em auto .5em auto;
+	max-width: 1080px;
+}
+
+.info-nosotros-article{
+	display: inline-block;
+	margin: 4.25em 0.5em;
+	padding: 1em;
+	vertical-align: top;
+	width: 30%;
+	background-color: #ddddd9;
+	border-radius: 2em;
+	height: 400px;
+}
+
+.info-nosotros-article img{
+	width: 100%;
+	display: block;
+}
+
+.info-nosotros-article h3{
+	margin: 10px auto;
+
+}
+
+.info-nosotros-article p{
+	line-height: 110%;
+	font-family: Arial, sans-serif;
+}
+
+
+
+#info-container img{
+	height: 130px;
+	margin-top: 2em;
+}
+
+#info-container #container{
+	margin-top: 2em;
+}
+
+#info-container{
+	background-color: #286FBF;
+}
+
+
+
+/*footer*/
+#footer-container{
+	font-size: 0.9em;
+	padding: 1em 0 !important; 
+
+}
+.contenedor-f{
+	text-align: center;
+	margin: 0.5em auto .5em auto;
+	max-width: 1080px;
+}
+
+ul.navegador{
+	margin-bottom:0 !important;
+}
+.footer-1 , .footer-2, .footer-3{
+	display: inline-block;
+	margin: 0 1em;
+	padding:0.5em;
+	vertical-align: bottom;
+	width: 28%;
+	text-align: center;
+}
+.footer-1{
+	text-align: left;
+}
+
+.footer-1-1{
+ margin-bottom: 2em;
+}
+
+.footer-1-1 img{
+ margin: 0 0.7em 0 0;
+}
+
+.footer-1-2 p{
+	margin: 0.5em 0 0 0;
+}
+
+.footer-1 img{
+	max-width: 100%;
+}
+
+.footer-2 p{
+	margin: 0;
+}
+
+.footer-3 a{
+	color: white;
+	padding-top: 1em;
+}
+.footer-3 img{
+ 	vertical-align: top;
+ 	padding-right: 0.4em;
+}
+
+.footer-3 li{
+	padding-left: 20%;
+	padding-top: 1em;
+	text-align: left;
+
+}
+
+
+.footer-3 a:hover, .footer-1 a:hover{
+	color: skyblue;
+	text-decoration: none;
+}
+
+li.nav-items{
+	list-style: none;
+}
+
+/*slide*/
+div.carousel-item h3{
+	color: black;
+	background-color: skyblue;
+	border: 1px solid blue;
+	padding: 0.2em 0;
+}
+
+.carousel-container {
+	margin: 10px auto;
+}
+
+
+/*Franco header */
+#header-container {
+    background-color: #286FBF;
+}
+.btn.btn-celperu{
+	background-color: #286FBF;
+}
+.col-xs-3 .imagen3{
+	margin-top: 0.5em;
+}
+
+/*Franco Mquery*/
+@media (max-width: 768px){
+	.info-nosotros-article{
+		display: inline;
+		margin: 0 auto;
+		background:none;
+
+	}
+
+	.info-nosotros-article div{
+		background: #ddddd9;
+		padding: 0.5em 0 0.3em 0;
+		border-radius: 0 0 1.5em 1.5em;
+	}
+
+	.info-nosotros-article div p{
+		padding: 0 0.5em;
+	}
+
+	#info-container img{
+		width: 110px;
+		height: 100px;
+	}
+
+	#info-container h4{
+		margin-top: 0.3em;
+	}
+
+	.footer-3{
+		display: none;
+
+	}
+	#footer-container{
+		text-align: center;
+	}
+	.footer-1 , .footer2{
+		display: inline;
+		text-align: center;
+	}
+
+	.footer-1-2{
+		margin-bottom: 3.8em;
+	}
+
+	.footer-2{
+		width: 80%;
+	}
+}
+/*Franco */
+@media (max-width: 440px){ 
+
+	.col-xs-3 .imagen3{ 
+		width: 240px; 
+		height: 90px; 
+		margin-left: -0.8em;
+	} 
+}
+
+button#btnf{
+	background-color: #286FBF;
+	
+}
+
+button#btnf a{
+	color: white;
+}
+button#btnf a:hover{
+	text-decoration: none;
+}
+.btn-registrar:hover{
+	color: white;
+
+}

@@ -21,7 +21,7 @@
       <div class="container">
         <div class="row  flex-items-xs-between flex-items-xs-middle">
             <div class="col-xs-3 ">
-              <h1>CelularesPeru</h1>
+              <h1>Peruvian Nexus</h1>
             </div>
              <div class="col-xs-3 text-xs-right">
               <button class="navbar-toggler  hidden-sm-up" data-toggle="collapse" data-target="#navMenu">&#9776;</button>
@@ -40,7 +40,7 @@
                                  <a class="login hidden-xs-down text-uppercase font-weigth-bold" href="{{ url('/logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">&#62;
-                                            Logout
+                                            Salir
                                 </a>
 
                                 <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
