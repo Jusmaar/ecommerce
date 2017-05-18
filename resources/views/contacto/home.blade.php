@@ -155,7 +155,7 @@
             <div class="row">
               <div class="col-xs-12 col-md-4">
                 
-                <h2><strong>CelularesPeru</strong></h2>
+                <h2><strong>Peruvian Nexus</strong></h2>
                  <p> Av Javier Prado 5227 dentro del local Sonax frente a club ACENESPAR al lado de plaza Camacho.</br> 
                   A 5 cuadras del óvalo de la Universidad de Lima.</p>
                 <p><strong>Telefono:</strong> 326-6506</p>
@@ -210,7 +210,7 @@
             </div>
             <div class="footer-1-2">
               <p>Escríbenos:</p>
-              <p><a href="mailto:celularesperu@gmail.com"><img src="CelularesPeru/imagenes/gmail.png"> @celularesperu@gmail.com</a></p>
+              <p><a href="mailto:celularesperu@gmail.com"><img src="CelularesPeru/imagenes/gmail.png"> @PeruvianNExus@gmail.com</a></p>
             </div>        
           </article>
 
